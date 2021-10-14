@@ -47,16 +47,13 @@ public class Thanos {
         }
 
         // TODO 5 : Keep only the half of the list
-        heroes.remove(7);
-        heroes.remove(6);
-        heroes.remove(5);
-        heroes.remove(4);
+        List<Hero> subListHeroes = heroes.subList(0,heroes.size()/2);
 
         // TODO 6 : Loop throught the list and display the name of the remaining heroes
         System.out.println("---------------------");
         System.out.println("Shorted list: ");
         System.out.println("-------------");
-        for (Hero element : heroes) {
+        for (Hero element : subListHeroes) {
             System.out.println(element.getName());
         }
     }
